@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template: auto;
+    padding: 1rem;
+}
+
+header {
+    background: gold;
+    padding: 1rem;
+    grid-column: 1 / 5;
+}
+
+nav {
+    background: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+main {
+    background: ivory;
+    height: 200px;
+    grid-column: 1 / 4;
+    padding: 1rem;
+}
+
+aside {
+    background: palegoldenrod;
+    grid-column: 4 / 5;
+    padding: 1rem;
+}
+
+footer {
+    background: gold;
+    padding: 1rem;
+    grid-column: 1 / 5;
+    ;
+}
