@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    grid-template: auto / auto;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+header {
+    background: gold;
+    grid-column: 1 / 5;
+}
+
+h2 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    place-items: center;
+    background: black;
+    height: 50px;
+
+}
+
+.course-title {
+    background: gold;
+    color: black;
+    grid-column: 1 / 5;
+    padding-left: 1rem;
+}
+
+.navigation {
+    display: grid;
+    justify-content: center;
+    flex: auto;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold
+}
+
+main {
+    background: ivory;
+    height: 200px;
+    grid-column: 1 / 4;
+    padding: 1rem;
+}
+
+aside {
+    background: palegoldenrod;
+    grid-column: 4 / 5;
+    padding: 1rem;
+}
+
+footer {
+    background: gold;
+    padding: 1rem;
+    grid-column: 1 / 5;
+    ;
+}
