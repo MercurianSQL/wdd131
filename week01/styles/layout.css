@@ -9,23 +9,19 @@ header {
     grid-column: 1 / 5;
 }
 
+div {
+    display: flex;
+    place-items: center;
+    background: black;
+    height: 50px;
+
+}
+
 .box {
     background: gold;
     color: black;
     grid-column: 1 / 5;
     padding-left: 1rem;
-    font-family: serif;
-}
-
-div {
-    background: black;
-    color: white;
-    display: flex;
-    place-items: center;
-
-    height: 50px;
-    font-family: sans-serif;
-    font-size: small;
 }
 
 .navigation {
@@ -33,7 +29,9 @@ div {
     justify-content: center;
     flex-wrap: wrap;
     flex: auto;
-
+    font-family: sans-serif;
+    font-size: small;
+    color: white;
 }
 
 main {
