@@ -34,6 +34,15 @@ div {
     color: white;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold
+}
+
 main {
     background: ivory;
     height: 200px;
