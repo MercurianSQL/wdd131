@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: auto;
+    grid-template: auto / auto;
     padding: 1rem;
 }
 
