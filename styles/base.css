@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     display: grid;
     grid-template-columns: auto 200px auto auto;
-    /* padding: 1rem; */
+
 }
 
 header {
@@ -11,15 +11,9 @@ header {
     text-align: center;
 }
 
-/* .course-title {
-    display: block;
-} */
-
 figure {
     border: 10px solid goldenrod;
     max-width: 200px;
-    /* display: grid; */
-    /* grid-column: 2 / 3; */
     padding: 10px;
 }
 
@@ -29,12 +23,6 @@ figcaption {
     font-size: small;
     max-width: 200px;
 }
-
-/* .about {
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-} */
 
 div {
     display: flex;
@@ -54,13 +42,6 @@ h3 {
     text-align: center;
 }
 
-/* .box {
-    background: gold;
-    color: black;
-    grid-column: 1 / 5;
-    padding-left: 1rem;
-} */
-
 .navigation {
     display: flex;
     justify-content: center;
@@ -79,8 +60,9 @@ h3 {
     background: ivory;
     display: grid;
     grid-column: 1 / 2;
+    margin-top: 9px;
     border: 1px solid transparent;
-    box-shadow: 6px 5px 8px 5px #002E5D;
+    box-shadow: 2px 5px 5px 5px #cce5ff;
 }
 
 .card a {
@@ -95,7 +77,6 @@ main {
     background: lightyellow;
     display: grid;
     grid-column: 1 / 5;
-    /* padding: 1rem; */
 }
 
 img.about {
@@ -103,14 +84,6 @@ img.about {
     grid-column: 2 / 3;
     padding-right: 20px;
 }
-
-/* aside {
-    background: palegoldenrod;
-    grid-column: 1 / 1;
-    padding: 1rem;
-} */
-
-
 
 footer {
     background: gold;
