@@ -1,19 +1,17 @@
 .league-spartan-mek {
     font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
 
 .inclusive-sans-mek {
     font-family: "Inclusive Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Inclusive Sans", sans-serif;
     display: grid;
     grid-template-columns: auto 200px auto auto;
 
@@ -23,6 +21,12 @@ header {
     background: gold;
     grid-column: 1 / 5;
     text-align: center;
+    padding-top: 1rem;
+}
+
+#course-title {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 figure {
@@ -52,7 +56,7 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h2 {
     text-align: center;
 }
 
