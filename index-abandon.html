@@ -10,14 +10,16 @@
     <meta name="author" content="Marinda Keller">
     <meta name="keywords" content="about, assignments, portfolio">
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <script src="wdd131/scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="box">
+        <span class="course-title">
             <h2>WDD 131 – Dynamic Web Fundamentals</h2>
-        </div>
+        </span>
+    </header>
+    <header>
         <div class="container">
             <nav class="navigation"><a href="https://www.linkedin.com/in/mercurian-librarian-a07087358/"
                     title="linkedIn" target="blank">LinkedIn</a></nav>
@@ -26,24 +28,24 @@
             <nav class="navigation"><a
                     href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/17?lang=eng&id=p3#p3"
                     title="scripture" target="blank">Scripture</a></nav>
-            <nav class="navigation"><a href="#" target="blank">Final Project</a></nav>
+            <nav class="navigation"><a href="#" title="final" target="blank">Final Project</a></nav>
         </div>
     </header>
     <main>
+        <h1>Marinda Keller</h1>
         <section class="card">
-            <h2>About me</h2>
-            Welcome! My name is Marinda (sounds similar to <a
+            <h2>About Me</h2>
+            images: Self, Place
+            content: Welcome! My name is Marinda (sounds similar to <a
                 href="https://ssl.gstatic.com/dictionary/static/pronunciation/2024-04-19/audio/ma/marimba_en_us_1.mp3"
                 target="_blank">marimba</a>
             ), and I'm from Utah, USA. I am a public librarian studying programming. I enjoy
             lifelong-learning. I like learning coding, machine sewing, and Sashiko. My pug, Suca, and I love treats,
             napping, walking, and playing fetch.
         </section>
-    </main>
-    <aside>
-        <section class="card">
+        <section class="aside" class="card">
             <h2>Web Dev Resources</h2>
-            <ul class="resources">
+            <ul class="navigation">
                 <li><a href="#" title="Home">Home</a></li>
                 <li><a href="#" title="About Us">About</a></li>
                 <li><a href="#" title="Our Partners">Affiliates</a></li>
@@ -51,10 +53,11 @@
                 <li><a href="#" title="Contact Us">Contact</a></li>
             </ul>
         </section>
-    </aside>
+    </main>
     <footer>
         <p>&copy;<span id="currentyear"></span>, Marinda Keller, Utah, USA</p>
         <p id="lastModified">
+
         </p>
     </footer>
 </body>

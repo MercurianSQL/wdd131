@@ -2,16 +2,11 @@ body {
     display: grid;
     grid-template: auto / auto;
     padding: 1rem;
-    font-family: sans-serif;
 }
 
 header {
     background: gold;
     grid-column: 1 / 5;
-}
-
-h2 {
-    text-align: center;
 }
 
 div {
@@ -22,7 +17,7 @@ div {
 
 }
 
-.course-title {
+.box {
     background: gold;
     color: black;
     grid-column: 1 / 5;
@@ -30,15 +25,21 @@ div {
 }
 
 .navigation {
-    display: grid;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     flex: auto;
-    color: white;
+    font-family: sans-serif;
+    font-size: small;
 }
 
-a {
+.navigation a {
     color: white;
     text-decoration: none;
+}
+
+.card a {
+    color: black;
 }
 
 a:hover {
