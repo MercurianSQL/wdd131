@@ -30,11 +30,11 @@ figcaption {
     max-width: 200px;
 }
 
-.about {
+/* .about {
     max-width: 200px;
     height: auto;
     border-radius: 10px;
-}
+} */
 
 div {
     display: flex;
