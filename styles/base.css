@@ -1,22 +1,20 @@
 body {
     display: grid;
-    grid-columns: auto auto 200px auto;
+    grid-columns: auto 200px auto auto;
     padding: 1rem;
 }
 
 header {
     background: gold;
     grid-column: 1 / 5;
+    text-align: center;
 }
 
-.course-title {
+/* .course-title {
     display: block;
-}
+} */
 
 
-h1 {
-    margin-top: 0;
-}
 
 div {
     display: flex;
@@ -26,12 +24,19 @@ div {
 
 }
 
-.box {
+
+h1 {
+    margin-top: 0;
+    grid-column: 1 / 5;
+    text-align: center;
+}
+
+/* .box {
     background: gold;
     color: black;
     grid-column: 1 / 5;
     padding-left: 1rem;
-}
+} */
 
 .navigation {
     display: flex;
@@ -69,9 +74,16 @@ img.about {
     padding-right: 20px;
 }
 
-aside {
+/* aside {
     background: palegoldenrod;
-    grid-column: 4 / 5;
+    grid-column: 1 / 1;
+    padding: 1rem;
+} */
+
+.left-sidebar {
+    background: palegoldenrod;
+    display: grid;
+    grid-column: 1 / 2;
     padding: 1rem;
 }
 
@@ -79,5 +91,5 @@ footer {
     background: gold;
     padding: 1rem;
     grid-column: 1 / 5;
-    ;
+    text-align: center;
 }
