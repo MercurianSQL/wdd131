@@ -20,13 +20,20 @@ figure {
     max-width: 200px;
     /* display: grid; */
     /* grid-column: 2 / 3; */
-    /* padding-right: 20px; */
+    padding: 10px;
 }
 
 figcaption {
     padding: 5px;
     font-style: italic;
     font-size: small;
+    max-width: 200px;
+}
+
+.about {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
 
 div {
