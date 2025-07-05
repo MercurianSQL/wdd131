@@ -8,6 +8,7 @@ header {
     background: gold;
     grid-column: 1 / 5;
 }
+
 .course-title {
     display: block;
 }
