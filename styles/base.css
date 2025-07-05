@@ -60,7 +60,8 @@ h3 {
     background: ivory;
     display: grid;
     grid-column: 1 / 2;
-    margin-top: 9px;
+    margin-top: 18px;
+    margin-left: 10px;
     border: 1px solid transparent;
     box-shadow: 2px 5px 5px 5px #cce5ff;
 }
