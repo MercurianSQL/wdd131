@@ -1,7 +1,8 @@
 body {
+    font-family: sans-serif;
     display: grid;
-    grid-columns: auto 200px auto auto;
-    padding: 1rem;
+    grid-template-columns: auto 200px auto auto;
+    /* padding: 1rem; */
 }
 
 header {
@@ -14,7 +15,19 @@ header {
     display: block;
 } */
 
+figure {
+    border: 10px solid goldenrod;
+    max-width: 200px;
+    /* display: grid; */
+    /* grid-column: 2 / 3; */
+    /* padding-right: 20px; */
+}
 
+figcaption {
+    padding: 5px;
+    font-style: italic;
+    font-size: small;
+}
 
 div {
     display: flex;
@@ -26,7 +39,6 @@ div {
 
 
 h1 {
-    margin-top: 0;
     grid-column: 1 / 5;
     text-align: center;
 }
@@ -61,11 +73,10 @@ a:hover {
 }
 
 main {
-    background: ivory;
-    height: 200px;
+    background: lightyellow;
     display: grid;
-    grid-column: 1 / 4;
-    padding: 1rem;
+    grid-column: 1 / 5;
+    /* padding: 1rem; */
 }
 
 img.about {
@@ -81,7 +92,7 @@ img.about {
 } */
 
 .left-sidebar {
-    background: palegoldenrod;
+    background: ivory;
     display: grid;
     grid-column: 1 / 2;
     padding: 1rem;
