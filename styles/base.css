@@ -50,6 +50,10 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
 /* .box {
     background: gold;
     color: black;
@@ -69,6 +73,14 @@ h1 {
 .navigation a {
     color: white;
     text-decoration: none;
+}
+
+.left-sidebar {
+    background: ivory;
+    display: grid;
+    grid-column: 1 / 2;
+    border: 1px solid transparent;
+    box-shadow: 6px 5px 8px 5px #002E5D;
 }
 
 .card a {
@@ -98,12 +110,7 @@ img.about {
     padding: 1rem;
 } */
 
-.left-sidebar {
-    background: ivory;
-    display: grid;
-    grid-column: 1 / 2;
-    padding: 1rem;
-}
+
 
 footer {
     background: gold;
