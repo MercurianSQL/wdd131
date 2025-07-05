@@ -21,7 +21,7 @@ h1 {
 div {
     display: flex;
     place-items: center;
-    background: black;
+    background: #002E5D;
     height: 50px;
 
 }
