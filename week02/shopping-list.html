@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping list example</title>
-    <style>
-      li {
-        margin-bottom: 10px;
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping list example</title>
+  <style>
+    li {
+      margin-bottom: 10px;
+    }
+
+    li button {
+      font-size: 12px;
+      margin-left: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>My shopping list</h1>
+
+  <div>
+    <label for="item">Enter a new item:</label>
+    <input type="text" name="item" id="user-input">
+    <button id="add-button">Add item</button>
+  </div>
+
+  <ul id="shopping-list">
+
+
+  </ul>
+
+  <script>
+
+    const userInput = document.querySelector("#user-input");
+    const addButton = document.querySelector("#add-button");
+    const shoppingList = document.querySelector("#shopping-list");
+
+    addButton.addEventListener("click", function () {
+      let trImput = userInput.value.trim();
+      if (trImput !== "") {
+        let lineItem = document.createElement("li");
+        lineItem.textContent = trImput;
+        shoppingList.appendChild(lineItem);
+        userInput.value = ""; // Clears the input field
+        userInput.focus(); // UX: cursor remains in the <input> field, else has to be clicked again
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        lineItem.appendChild(deleteButton);
+        deleteButton.addEventListener("click", function () {
+          shoppingList.removeChild(lineItem);
+          userInput.focus(); // UX: cursor remains in the <input> field, else has to be clicked again
+        });
       }
+    })
 
-      li button {
-        font-size: 12px;
-        margin-left: 20px;
-        color: #666;
-      }
-    </style>
-  </head>
-  <body>
 
-    <h1>My shopping list</h1>
 
-    <div>
-      <label for="item">Enter a new item:</label>
-      <input type="text" name="item" id="item">
-      <button>Add item</button>
-    </div>
 
-    <ul>
+    // later we will need a when pushed statement to start the script, right? addEventListener
 
-    </ul>
 
-    <script>
+    // Create a function that will run in response to the button being clicked.
+    // Inside the function body, start off by storing the current value of
+    // the input element in a variable.
+    // Next, empty the input element by setting its value to an empty string — "".
 
-    </script>
-  </body>
+    // Create three new elements — a list item (<li>), <span>, and <button>, and
+    // store them in variables.
+    // Append the span and the button as children of the list item.
+    // Set the text content of the span to the input element value you saved earlier, and
+    // the text content of the button to 'Delete'.
+
+    // Append the list item as a child of the list.
+    // Attach an event handler to the delete button so that, when clicked,
+    // it will delete the entire list item (<li>...</li>).
+
+    // Finally, use the focus() method to focus the input element ready for
+    // entering the next shopping list item.
+  </script>
+</body>
+
 </html>
+
+<!-- notes:
+     // User types something → itemInput.value updates
+    // But itemInput still points to the same <input> element.
+    // No reassignment = const is safe. -->
