@@ -2,11 +2,11 @@ const userInput = document.querySelector("#user-input");
 const addButton = document.querySelector("#lg-button");
 const listTen = document.querySelector("#chapter-list");
 
-userInput.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-        addButton.click(); // Triggers the button’s click event
-    }
-});
+// userInput.addEventListener("keyup", function (event) {
+//     if (event.key === "Enter") {
+//         addButton.click(); // Triggers the button’s click event
+//     }
+// });
 
 addButton.addEventListener("click", function () {
     if (userInput.value.trim() !== "") {
