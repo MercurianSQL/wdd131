@@ -1,36 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Marinda Keller">
-    <meta name="keywords" content="week02">
-    <meta name="description" content="Book of Mormon, Top 10 List, Chapters, Favorites">
-    <title>Book of Mormon - Top 10</title>
-    <link rel="stylesheet" href="styles/bom.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marinda Keller">
+  <meta name="keywords" content="week02">
+  <meta name="description" content="Book of Mormon, Top 10 List, Chapters, Favorites">
+  <title>Book of Mormon - Top 10</title>
+  <link rel="stylesheet" href="styles/bom.css">
+  <script src="scripts/bom.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Book of Mormon - Top 10</h1>
-    </header>
+  <h1>Book of Mormon - Top 10</h1>
 
-    <main>
+  <div>
+    <label for="item">Enter a Book and Chapter:</label>
+    <input type="text" id="user-input" placeholder="Alma 5">
+    <button id="add-button">Add Chapter</button>
+  </div>
 
-        <label for="user-input">Enter a Book and Chapter: </label>
-        <br>
-        <input type="text" id="user-input" placeholder="Alma 5">
-        <br>
-        <button id="lg-button">Add Chapter</button>
-        <div>
-            <ul id="chapter-list">
+  <ul id="chapter-list">
 
-            </ul>
-        </div>
-    </main>
 
+
+  </ul>
+
+  <script>
+
+    const userInput = document.querySelector("#user-input");
+    const addButton = document.querySelector("#add-button");
+    const chapterList = document.querySelector("#chapter-list");
+
+    addButton.addEventListener("click", function () {
+      let trImput = userInput.value.trim();
+      if (trImput !== "") {
+        let lineItem = document.createElement("li");
+        lineItem.textContent = trImput;
+        chapterList.appendChild(lineItem);
+        userInput.value = ""; // Clears the input field
+        userInput.focus(); // UX: cursor remains in the <input> field, else has to be clicked again
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        lineItem.appendChild(deleteButton);
+        deleteButton.addEventListener("click", function () {
+          chapterList.removeChild(lineItem);
+          userInput.focus(); // UX: cursor remains in the <input> field, else has to be clicked again
+        });
+      }
+    })
+
+
+
+
+    // later we will need a when pushed statement to start the script, right? addEventListener
+
+
+    // Create a function that will run in response to the button being clicked.
+    // Inside the function body, start off by storing the current value of
+    // the input element in a variable.
+    // Next, empty the input element by setting its value to an empty string — "".
+
+    // Create three new elements — a list item (<li>), <span>, and <button>, and
+    // store them in variables.
+    // Append the span and the button as children of the list item.
+    // Set the text content of the span to the input element value you saved earlier, and
+    // the text content of the button to 'Delete'.
+
+    // Append the list item as a child of the list.
+    // Attach an event handler to the delete button so that, when clicked,
+    // it will delete the entire list item (<li>...</li>).
+
+    // Finally, use the focus() method to focus the input element ready for
+    // entering the next shopping list item.
+  </script>
 </body>
 
 </html>
+
+<!-- notes:
+     // User types something → itemInput.value updates
+    // But itemInput still points to the same <input> element.
+    // No reassignment = const is safe. -->
