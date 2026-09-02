@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 131</title>
-    <meta
-      name="description"
-      content="WDD 131 course homepage for GitHub Pages deployment."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="top-nav">
-        <div class="brand">WDD 131</div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#assignments">Assignments</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main id="home">
-      <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">BYU-Pathway Worldwide</p>
-          <h1>Web Design and Development</h1>
-          <p>
-            This site is configured to publish with GitHub Pages and is ready for
-            your course work and assignments.
-          </p>
-          <a class="button" href="#assignments">View assignments</a>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
+  <meta name="author" content="Marinda Keller">
+  <meta name="keywords" content="WDD 131, Dynamic Web Fundamentals, Marinda Keller">
+  <title>WDD 131 – Dynamic Web Fundamentals – Marinda Keller</title>
+  <link rel="stylesheet" href="styles/base.css">
+</head>
 
-      <section id="assignments" class="content-section">
-        <h2>Assignments</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Week 1</h3>
-            <p>Set up your course homepage and project structure.</p>
-          </article>
-          <article class="card">
-            <h3>Week 2</h3>
-            <p>Create responsive HTML pages and improve semantic structure.</p>
-          </article>
-          <article class="card">
-            <h3>Week 3</h3>
-            <p>Apply accessible styling and refine layout design.</p>
-          </article>
-        </div>
-      </section>
+<body>
+  <header>
+    <span>WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <ul class="navigation">
+        <li><a href="https://www.linkedin.com/feed/" title="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com" title="Canvas">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/31?lang=eng&id=p23-p24#p23"
+            title="Psalms 31:23-24">Scripture</a></li>
+        <li><a href="#" title="Final Project">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <section id="about" class="content-section">
-        <h2>About</h2>
-        <p>
-          This repository is set to deploy as a static GitHub Pages site using a
-          GitHub Actions workflow. Update the content in this page as your course
-          work progresses.
-        </p>
-      </section>
-    </main>
+  <main>
+    <h1>Marinda Keller</h1>
+    <section class="card">
+      <h2>About Me & My Pug Suca</h2>
+      <div class="card">
+        <img src="images/Suca 500.jpg" alt="Suca the pug" height="250">
+        <p>A group of Pugs is called a Grumble.
+          That term fits our family of 4 humans and 1 pug very nicely.
+          Suca is a standard pug.
+          She is a standard color type, fawn.
+          That means her coat is a light brown or tan color,
+          but her ears and face have significantly darker marks.
+          Her ears are non-standard.
+          Breed standard is button ears.
+          Her ears are flying.
+          Suca has a standard tail type.
+          It curls like a cinnamon roll.
+          Most of Suca's claws are clear, not black.
+          This theoretically makes them easier to keep trim. </p>
+    </section>
 
-    <footer class="site-footer">
-      <p>© 2026 WDD 131</p>
-    </footer>
-  </body>
+    <section class="card3">
+      <h2>Shang Dynasty Historical Banner</h2>
+      <img src="images/Shang banner.png" alt="Banner of the Shang Dynasty" height="100">
+      <p>The Shang Dynasty was an ancient Chinese dynasty that lasted from approximately 1600 BC to 1046 BC.
+        This is the time period when Pugs are believed to have been bred as companions to the emperor in ancient China.
+      </p>
+    </section>
+
+    <section class="card2">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://www.siegemedia.com/contrast-ratio#darkblue-on-lightblue" title="Siege Media">Contrast
+            Ratio</a></li>
+        <li><a href="https://www.rapidtables.com/web/css/css-color.html" title="RapidTables">CSS Color Codes</a>
+        </li>
+        <li><a href="https://codepen.io/blazzard-jason/pen/jMpbRN" title="CodePen">CodePen</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+
+    <p>&copy; <span id="current year"></span> &#x1F43E Marinda Keller &#x1F43E USA</p>
+    <script>
+      document.getElementById("current year").textContent = new Date().getFullYear();
+    </script>
+    <p>Last modified <span id="last modified"></span>
+      <script>
+        document.getElementById("last modified").textContent = new Date().toLocaleDateString();
+      </script>
+    </p>
+  </footer>
+</body>
+
 </html>
