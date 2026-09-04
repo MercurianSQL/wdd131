@@ -46,9 +46,14 @@ header span {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     width: 98%;
+}
+
+.card {
+    background: var(--background-color);
+    display: block;
 }
 
 h1 {
@@ -64,15 +69,15 @@ h2 {
     font-size: 1rem;
     padding: 1rem;
     display: grid;
+    grid-column: 1 / 3;
     text-align: center;
     background-color: var(--primary-color);
 }
 
 .card1a {
-    background: var(--background-color);
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    padding: 1rem 1rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .card1a img {
@@ -83,7 +88,6 @@ h2 {
 }
 
 .card1b {
-    background: var--card-background;
     grid-column: 1 / 3;
     grid-row: 3 / 4;
     padding: 1rem 1rem 2rem;

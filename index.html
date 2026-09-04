@@ -8,7 +8,10 @@
   <meta name="author" content="Marinda Keller">
   <meta name="keywords" content="WDD 131, Dynamic Web Fundamentals, Marinda Keller">
   <title>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals – Marinda Keller</span>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals – Marinda Keller
+      <span id="description">A school webpage for Marinda Keller, a student at BYU-Pathway studying Web Development.
+        This page includes information about Marinda, her interests, and resources for web development.
+      </span>
   </title>
   <link rel="stylesheet" href="styles/base.css">
   <script src="scripts/getdates.js" defer></script>
@@ -27,52 +30,60 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <h1>Marinda Keller</h1>
-    <section class="card1a">
-      <h2>About Me & My Pug Suca</h2>
-      <div class="card">
-        <img src="images/suca-500.jpg" alt="Suca the pug" height="250">
-        <p>A group of Pugs is called a Grumble.
-          That term fits our family of 4 humans and 1 pug very nicely.
-          Suca is a standard pug.
-          She is a standard color type, fawn.
-          That means her coat is a light brown or tan color,
-          but her ears and face have significantly darker marks.
-          Her ears are non-standard.
-          Breed standard is button ears.
-          Her ears are flying.
-          Suca has a standard tail type.
-          It curls like a cinnamon roll.
-          Most of Suca's claws are clear, not black.
-          This theoretically makes them easier to keep trim. &#x1F43E</p>
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="card1a">
+        <img src="images/me-500.jpg" alt="Marinda Keller" height="150">
+        <p>My name is Marinda Keller.
+          I am a student at BYU-Pathway.
+          I am studying Web Development.
+          I am married and have 2 children.
+          I also have a pug named Suca.
+          I enjoy spoiling Suca, reading, sewing, and spending time with my family.
+          I work as a full-time Librarian at the Hunter branch of the County Library in Salt Lake, Utah.
+          There I manage the teen fiction collection and the juvenile non-fiction section.
+          I am responsible for all the teen programming.
+          My favorite programs are the ones I can completely prep for in advance.
+          That way I can watch all the teens enjoy the event. &#x1F43E;</p>
+      </div>
+
+
+
+      <div class="card1b">
+        <h2>Flag of the State of Utah</h2>
+        <img src="images/flag-utah.webp" alt="Utah State Flag" height="100">
+        <p>In the summer of 2026, I ran a program with the support of the Utah Historical Society, where teens got to
+          make
+          a "stained glass" state flag using tissue paper and laminate sheets.
+          The blue stands for the blue skies of Utah, the white for the snow-capped mountains, the red for the canyons
+          in
+          the south of the state. The beehive stands for industry and the star is for statehood. &#x1F43E;
+        </p>
+      </div>
     </section>
 
-    <section class="card1b">
-      <h2>Shang Dynasty Historical Banner</h2>
-      <img src="images/shang-banner.png" alt="Banner of the Shang Dynasty" height="100">
-      <p>The Shang Dynasty was an ancient Chinese dynasty that lasted from approximately 1600 BC to 1046 BC.
-        This is the time period when Pugs are believed to have been bred as companions to the emperor in ancient China.
-        &#x1F43E
-      </p>
-    </section>
-
-    <section class="card2">
-      <h2>Web Dev Resources</h2>
-      <ul>
-        <li><a href="https://www.siegemedia.com/contrast-ratio#darkblue-on-lightblue" title="Siege Media">Contrast
-            Ratio</a></li>
-        <li><a href="https://www.rapidtables.com/web/css/css-color.html" title="RapidTables">CSS Color Codes</a>
-        </li>
-        <li><a href="https://codepen.io/blazzard-jason/pen/jMpbRN" title="CodePen">CodePen</a></li>
-      </ul>
+    <section class="card">
+      <div class="card2">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="https://www.siegemedia.com/contrast-ratio#darkblue-on-lightblue" title="Siege Media">Contrast
+              Ratio</a></li>
+          <li><a href="https://www.rapidtables.com/web/css/css-color.html" title="RapidTables">CSS Color Codes</a>
+          </li>
+          <li><a href="https://codepen.io/blazzard-jason/pen/jMpbRN" title="CodePen">CodePen</a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <footer>
 
-    <p>&copy; <span id="current year"></span> &#x1F43E Marinda Keller &#x1F43E USA</p>
+    <p>&copy;
+      <span id="current year"></span>
+      &#x1F43E; Marinda Keller &#x1F43E; USA
+    </p>
     <script>
       document.getElementById("current year").textContent = new Date().getFullYear();
     </script>
