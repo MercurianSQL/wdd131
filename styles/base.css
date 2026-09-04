@@ -41,7 +41,7 @@ header span {
 
 .navigation a:hover {
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: var(--background-color);
 }
 
 main {
@@ -84,7 +84,7 @@ h2 {
     float: right;
     margin: 0 0 15px 15px;
     border: 1px solid rgba(0, 0, 0, .3);
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 30px var(--secondary-color);
 }
 
 .card1b {
@@ -97,7 +97,7 @@ h2 {
     float: left;
     margin: 1rem 1rem 15px 15px;
     border: 1px solid rgba(0, 0, 0, .3);
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 30px var(--secondary-color);
 }
 
 .card2 {
@@ -112,6 +112,11 @@ h2 {
     color: var(--card-background);
     text-decoration: none;
     padding: 0.75rem 0.5rem;
+}
+
+.card2 a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--background-color);
 }
 
 footer {
