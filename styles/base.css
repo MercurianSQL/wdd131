@@ -10,7 +10,7 @@ body {
 
 header {
     background: var(--primary-color);
-    color: black;
+    color: var(--secondary-color);
     grid-column: 1 / 4;
     font-size: 1rem;
     padding: 1rem 0 1rem;
