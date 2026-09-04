@@ -24,7 +24,7 @@ header span {
 .navigation {
     list-style: none;
     display: flex;
-    background-color: black;
+    background-color: var(--secondary-color);
 }
 
 .navigation li {
