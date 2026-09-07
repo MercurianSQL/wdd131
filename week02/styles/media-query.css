@@ -1,5 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
+
 }
 
 header main footer {
@@ -14,6 +15,12 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #dbedff;
+    color : #000;
 }
 
 @media screen and (min-width: 500px) {
