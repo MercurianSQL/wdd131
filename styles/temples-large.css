@@ -21,9 +21,9 @@
     header main footer {
         width: 500px;
         margin: 1rem auto;
-        border: 1px solid #ccc;
+        border: 1px solid var(--background-color);
         padding: 1rem;
-        background-color: #dbedff;
+        background-color: var(--section-background);
     }
 
     h1 {
@@ -32,7 +32,6 @@
         color: var(--secondary-color);
     }
 
-
     main {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -40,11 +39,13 @@
         grid-gap: 1rem;
     }
 
-    section {
+    figure {
         padding: 1rem;
-        background-color: #dbedff;
-        color: #000;
+        background-color: var(--section-background);
+        color: var(--background-color);
+        text-align: center;
     }
+
 
     footer {
         background: var(--secondary-color);
