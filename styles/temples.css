@@ -4,18 +4,25 @@
     font-weight: 500;
     font-style: normal;
 }
+#album::before {
+    content: "≡";
+    display: block;
+    font-size: 3rem;
+    float: right;
+    padding: 0.5rem;
+}
 
-.navigation {
+.nav {
     list-style: none;
     display: flex;
     background-color: var(--secondary-color);
 }
 
-.navigation li {
-    flex: 1 1 auto;
+.nav li {
+    display: none;
 }
 
-.navigation a {
+.nav a {
     display: block;
     color: var(--primary-color);
     padding: 0.75rem;
@@ -23,10 +30,18 @@
     text-align: center;
 }
 
-.navigation a:hover {
+.nav a:hover {
     text-decoration: underline;
     color: var(--section-background);
     text-decoration-color: var(--section-background);
+}
+
+.show li {
+    display: block;
+}
+
+#album.show::before {
+    content: "↑";
 }
 
 header main footer {
@@ -49,10 +64,16 @@ main {
     grid-gap: 1rem;
 }
 
-section {
+figure {
     padding: 1rem;
     background-color: var(--background-color);
     color: #000;
+    text-align: center;
+}
+
+img {
+    height: auto;
+
 }
 
 footer {

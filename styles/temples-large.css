@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     /* larger screen styles go here */
 
     * {
@@ -9,6 +9,15 @@
         font-style: normal;
     }
 
+    #album::before {
+        content: "";
+    }
+
+    .nav li {
+        flex: 1 1 auto;
+        display: block;
+    }
+
     header main footer {
         width: 500px;
         margin: 1rem auto;
@@ -16,6 +25,13 @@
         padding: 1rem;
         background-color: #dbedff;
     }
+
+    h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+        color: var(--secondary-color);
+    }
+
 
     main {
         display: grid;
