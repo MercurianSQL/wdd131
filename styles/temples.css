@@ -4,6 +4,7 @@
     font-weight: 500;
     font-style: normal;
 }
+
 #album::before {
     content: "≡";
     display: block;
