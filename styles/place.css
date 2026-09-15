@@ -1,0 +1,97 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --color-green1: #63927c;
+    --color-green2: #59ab1e;
+    --color-green3: #005e2c;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+header {
+    color: var(--background-color);
+    background-color: var(--color-green3);
+}
+
+
+h1 {
+    text-align: center;
+
+}
+
+.tag {
+    text-align: center;
+}
+
+main {
+    grid-template-columns: auto;
+    grid-template-rows: auto, 1fr, 1fr;
+}
+
+figure {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: right;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+td {
+    font-size: 0.8rem;
+}
+
+.data {
+    background-color: var(--color-green1);
+    position: absolute;
+    top: 2rem;
+    left: 5%;
+    transform: translateX(10%);
+    transform: translateY(50%);
+}
+
+.weather {
+    background-color: var(--color-green2);
+    position: absolute;
+    bottom: 2rem;
+    right: 5%;
+    transform: translateX(-50%);
+    transform: translateY(-10%);
+}
+
+
+ul li::marker {
+    content: "";
+}
+
+footer {
+    text-align: center;
+    color: var(--background-color);
+    background-color: var(--color-green3);
+}
+
+@media screen and (min-width: 600px) {}
