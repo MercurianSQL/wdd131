@@ -66,7 +66,8 @@ td {
 }
 
 .data {
-    background-color: var(--color-green1);
+    background-color: var(--color-green3);
+    color: var(--background-color);
     position: static;
     top: 2rem;
     margin: 2rem;
@@ -92,7 +93,8 @@ footer {
 
 @media screen and (min-width: 600px) {
     .data {
-        background-color: var(--color-green1);
+        background-color: var(--color-green3);
+        color: var(--background-color);
         position: absolute;
         top: 2rem;
         left: 5%;
