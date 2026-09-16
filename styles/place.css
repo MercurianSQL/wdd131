@@ -27,8 +27,8 @@ h1 {
 }
 
 main {
-    grid-template-columns: auto;
-    grid-template-rows: auto 1fr 1fr;
+    display: grid;
+    position: relative;
 }
 
 figure {
@@ -68,17 +68,22 @@ td {
 .data {
     background-color: var(--color-green3);
     color: var(--background-color);
-    position: static;
-    top: 2rem;
-    margin: 2rem;
+    margin: 2rem auto;
 }
 
 .weather {
     background-color: var(--color-green2);
-    width: auto;
-    position: static;
 }
 
+.weather th::after {
+    content: "";
+    background-image: url("/images/temps.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
 
 ul li::marker {
     content: "";
@@ -90,25 +95,33 @@ footer {
     background-color: var(--color-green3);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr auto;
+    }
+
+    .hero {
+        grid-column: 1 /4;
+        position: relative;
+    }
+
+
     .data {
         background-color: var(--color-green3);
         color: var(--background-color);
         position: absolute;
-        top: 2rem;
+        top: 5%;
         left: 5%;
-        transform: translateX(10%);
-        transform: translateY(50%);
+        width: 25%;
     }
 
     .weather {
         background-color: var(--color-green2);
-        width: auto;
         position: absolute;
-        bottom: 2rem;
+        bottom: 5%;
         right: 5%;
-        transform: translateX(-50%);
-        transform: translateY(-10%);
+        width: 25%;
+
     }
 
 }
