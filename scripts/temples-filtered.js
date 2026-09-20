@@ -149,7 +149,7 @@ const largeLink = document.querySelector("#large");
 
 largeLink.addEventListener("click", () => {
     const filteredTemples = temples.filter(temple => {
-        return Number(temple.area.substring(0, 6)) >= 90000;
+        return Number(temple.area) >= 90000;
     });
     createTempleCard(filteredTemples);
 });
@@ -159,7 +159,7 @@ const smallLink = document.querySelector("#small");
 
 smallLink.addEventListener("click", () => {
     const filteredTemples = temples.filter(temple => {
-        return Number(temple.area.substring(0, 6)) <= 10000;
+        return Number(temple.area) <= 10000;
     });
     createTempleCard(filteredTemples);
 });
