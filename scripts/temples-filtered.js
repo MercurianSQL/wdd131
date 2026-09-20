@@ -92,6 +92,7 @@ const temples = [
 //3. Create Functions (ex: the function to create temple cards)
 
 function createTempleCard(temples) {
+    document.querySelector("res.grid").innerHTML = "";
     temples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
