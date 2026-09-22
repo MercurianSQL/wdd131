@@ -83,6 +83,8 @@ img {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 15px;
+    text-align: center;
+
 }
 
 .res-grid section {
@@ -95,6 +97,15 @@ img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 10px;
+}
+
+.card {
+    margin: 1rem auto;
+    gap: 1rem;
+    background-color: var(--background-color);
+    border: 10px solid var(--primary-color);
+    border-radius: 10px;
 }
 
 footer {

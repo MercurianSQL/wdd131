@@ -95,6 +95,7 @@ function createTempleCard(temples) {
     document.querySelector(".res-grid").innerHTML = "";
     temples.forEach(temple => {
         let card = document.createElement("section");
+        card.classList.add("card")
         let name = document.createElement("h3");
         let location = document.createElement("p")
         let dedicated = document.createElement("p");
@@ -113,7 +114,7 @@ function createTempleCard(temples) {
 
         dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
 
-        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+        area.innerHTML = `<span class="label">Size:</span> ${Number(temple.area).toLocaleString()} sq ft`;
 
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
@@ -123,7 +124,6 @@ function createTempleCard(temples) {
         card.appendChild(location);
         card.appendChild(dedicated);
         card.appendChild(area);
-        card.appendChild(img);
 
         if (temple === temples[temples.length - 1]) {
             caption.textContent = "David Andrade, 2021";
