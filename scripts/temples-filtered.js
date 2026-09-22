@@ -151,7 +151,7 @@ createTempleCard(temples);
 const homeLink = document.querySelector("#home");
 
 homeLink.addEventListener("click", () => {
-    createTempleCard(filteredTemples);
+    createTempleCard(temples);
 });
 
 

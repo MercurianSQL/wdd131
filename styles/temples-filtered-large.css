@@ -46,6 +46,15 @@
         text-align: center;
     }
 
+    .res-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .card {
+        background-color: var(--section-background);
+        border: 10px solid var(--primary-color);
+    }
 
     footer {
         background: var(--secondary-color);
@@ -61,5 +70,11 @@
         --background-color: #000000;
         --section-background: #dbedff;
     }
+}
 
+
+@media screen and (min-width: 1200px) {
+    .res-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
