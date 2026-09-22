@@ -92,14 +92,20 @@ const temples = [
 //3. Create Functions (ex: the function to create temple cards)
 
 function createTempleCard(temples) {
-    document.querySelector("res.grid").innerHTML = "";
+    document.querySelector(".res-grid").innerHTML = "";
     temples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p")
         let dedicated = document.createElement("p");
         let area = document.createElement("p");
+
+
+
+        let figure = document.createElement("figure");
         let img = document.createElement("img");
+        let caption = document.createElement("figcaption");
+
 
         name.textContent = temple.templeName;
 
@@ -119,15 +125,36 @@ function createTempleCard(temples) {
         card.appendChild(area);
         card.appendChild(img);
 
+        if (temple === temples[temples.length - 1]) {
+            caption.textContent = "David Andrade, 2021";
+            figure.appendChild(img);
+            figure.appendChild(caption);
+            card.appendChild(figure);
+        }
+        else {
+            card.appendChild(img);
+        }
+
+
         document.querySelector(".res-grid").appendChild(card);
     });
 }
+
+
 
 
 // 5. Display all the temples
 createTempleCard(temples);
 
 //6. Add filter buttons
+
+const homeLink = document.querySelector("#home");
+
+homeLink.addEventListener("click", () => {
+    createTempleCard(filteredTemples);
+});
+
+
 const oldLink = document.querySelector("#old");
 //create one for each old new etc link//
 oldLink.addEventListener("click", () => {

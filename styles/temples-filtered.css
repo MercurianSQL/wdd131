@@ -70,11 +70,31 @@ figure {
     background-color: var(--background-color);
     color: #000;
     text-align: center;
+    margin: 15px;
 }
 
 img {
     height: auto;
 
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 15px;
+}
+
+.res-grid section {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.res-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer {
