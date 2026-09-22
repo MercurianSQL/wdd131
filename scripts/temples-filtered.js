@@ -8,7 +8,6 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
-
 //2.Create temple data 
 const temples = [
     {
