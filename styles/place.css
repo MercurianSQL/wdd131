@@ -124,4 +124,8 @@ footer {
 
     }
 
+    .weather th::after {
+        content: "🌡";
+        background-image: url("");
+    }
 }
