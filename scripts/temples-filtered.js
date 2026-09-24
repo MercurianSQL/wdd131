@@ -75,13 +75,19 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/rio-de-janeiro-brazil-temple/rio-de-janeiro-brazil-temple-8167-main.jpg"
     }, {
+        templeName: "Salt Lake Temple",
+        location: "Salt Lake City, Utah",
+        dedicated: "1893, April, 24",
+        area: 382207,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/800x500/slctemple7.jpg"
+    }, {
         templeName: "São Paulo Brazil Temple",
         location: "São Paulo, Brazil",
         dedicated: "1978, November, 2",
         area: 59246,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/sao-paulo-brazil-temple/sao-paulo-brazil-temple-45762.jpg"
-    },
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/800x500/sao-paulo-brazil-mormon-temple-947863-wallpaper.jpg"
+    }
 ];
 
 // Sao Paulo: 10 Sept 2021 David Andrade Copyright
@@ -123,17 +129,7 @@ function createTempleCard(temples) {
         card.appendChild(location);
         card.appendChild(dedicated);
         card.appendChild(area);
-
-        if (temple === temples[temples.length - 1]) {
-            caption.textContent = "David Andrade, 2021";
-            figure.appendChild(img);
-            figure.appendChild(caption);
-            card.appendChild(figure);
-        }
-        else {
-            card.appendChild(img);
-        }
-
+        card.appendChild(img);
 
         document.querySelector(".res-grid").appendChild(card);
     });
