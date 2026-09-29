@@ -27,7 +27,7 @@
         <form method="get" action="review.html" class="pr1">
             <fieldset>
                 <legend>Product Name*</legend>
-                <label><select id="product" name="product" required>
+                <label for="product"><select id="product" name="product" required>
                         <option value="" disabled selected>Select a Product &#9662;</option>
                     </select></label>
                 <!--get this info to and from the array-->
@@ -36,24 +36,24 @@
 
             <fieldset>
                 <legend>Overall Rating*</legend>
-                <label><input type=radio id="five" name=stars value="5-stars" required><span
+                <label for="five"><input type=radio id="five" name=stars value="5-stars" required><span
                         class=star>&star;&star;&star;&star;&star;</span>
                 </label>
-                <label><input type=radio id="four" name=stars value="4-stars" required><span
+                <label for="four"><input type=radio id="four" name=stars value="4-stars" required><span
                         class=star>&star;&star;&star;&star;</span>
                 </label>
-                <label><input type=radio id="three" name=stars value="3-stars" required><span
+                <label for="three"><input type=radio id="three" name=stars value="3-stars" required><span
                         class=star>&star;&star;&star;</span>
                 </label>
-                <label><input type=radio id="two" name=stars value="2-stars" required><span
+                <label for="two"><input type=radio id="two" name=stars value="2-stars" required><span
                         class=star>&star;&star;</span>
                 </label>
-                <label><input type=radio id="one" name=stars value="1-stars" required><span
+                <label for="one"><input type=radio id="one" name=stars value="1-stars" required><span
                         class=star>&star;</span></label>
             </fieldset>
             <fieldset>
                 <legend>Date of Installation*</legend>
-                <label><input type=date id=install name="install" required></label>
+                <label for="install"><input type=date id="install" name="install" required></label>
             </fieldset>
             <fieldset>
                 <legend>Which Features did you find useful in the product?<br>
@@ -68,14 +68,14 @@
             </fieldset>
 
             <fieldset>
-                <label>Written Review<br>
+                <legend>Written Review<br>
                     <span class="features">(Optional)</span><input type="text" id=review name="review">
-                </label>
+                </legend>
             </fieldset>
 
             <fieldset>
-                <label>Your Name<br><span class="features">(Optional)</span><input type="text" id=name
-                        name="name"></label>
+                <legend>Your Name<br><span class="features">(Optional)</span><input type="text" id=name name="name">
+                </legend>
             </fieldset>
 
             <input type="submit" value="Post Review">
