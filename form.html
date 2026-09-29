@@ -27,29 +27,28 @@
         <form method="get" action="review.html" class="pr1">
             <fieldset>
                 <legend>Product Name*</legend>
-                <select id="product" name="product" required>
-                    <option value="" disabled selected>Please Select &#9662;</option>
-                </select>
+                <label><select id="product" name="product" required>
+                        <option value="" disabled selected>Select a Product &#9662;</option>
+                        <select></label>
                 <!--get this info to and from the array-->
             </fieldset>
 
 
             <fieldset>
                 <legend>Overall Rating*</legend>
-                <label>
-                    <input type=radio id="five" name=stars value="5-stars" required><span
+                <label><input type=radio id="five" name=stars value="5-stars" required><span
                         class=star>&star;&star;&star;&star;&star;</span>
                 </label>
-                <label>
-                    <input type=radio id="four" name=stars value="4-stars" required><span
+                <label><input type=radio id="four" name=stars value="4-stars" required><span
                         class=star>&star;&star;&star;&star;</span>
-                </label><label>
-                    <input type=radio id="three" name=stars value="3-stars" required><span
+                </label>
+                <label><input type=radio id="three" name=stars value="3-stars" required><span
                         class=star>&star;&star;&star;</span>
-                </label><label>
-                    <input type=radio id="two" name=stars value="2-stars" required><span class=star>&star;&star;</span>
-                </label><label>
-                    <input type=radio id="one" name=stars value="1-stars" required><span
+                </label>
+                <label><input type=radio id="two" name=stars value="2-stars" required><span
+                        class=star>&star;&star;</span>
+                </label>
+                <label><input type=radio id="one" name=stars value="1-stars" required><span
                         class=star>&star;</span></label>
             </fieldset>
             <fieldset>
@@ -60,10 +59,10 @@
                 <legend>Which Features did you find useful in the product?<br>
                     <span class="features">(Check all that apply)</span>
                 </legend>
-                <label><input type=checkbox name=code value=yes>Durability</label>
-                <label><input type=checkbox name=client value=yes>Ease of Use</label>
-                <label><input type=checkbox name=editing value=yes>Performance</label>
-                <label><input type=checkbox name=process value=yes>Design</label>
+                <label for="dura"><input type=checkbox name="dura" value=yes>Durability</label>
+                <label for="ease"><input type=checkbox name="ease" value=yes>Ease of Use</label>
+                <label for="performance"><input type=checkbox name="performance" value=yes>Performance</label>
+                <label for="design"><input type=checkbox name="design" value=yes>Design</label>
             </fieldset>
 
             <fieldset>
