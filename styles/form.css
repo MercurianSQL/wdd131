@@ -1,0 +1,49 @@
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+fieldset {
+    margin: 16px;
+    background-color: whitesmoke
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input {
+    height: 44px;
+    vertical-align: middle;
+}
+
+input[type=radio] {
+    vertical-align: middle;
+}
+
+.star {
+    font-size: 1.2rem;
+    font-style: bold;
+    -webkit-text-stroke: 0.5px black;
+}
+
+li {
+    list-style: none;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: darkblue;
+}
+
+input[type=text] {
+    width: 500px;
+    max-width: 100%;
+}
+
+input[type=submit] {
+    width: 600px;
+    height: 50px;
+    margin: 0 5% 0 5%;
+    max-width: 90%;
+    font-size: 1.3rem;
+}

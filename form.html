@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name=description
+        content="create a product review form using good form design principles, to be user-friendly on both mobile and desktop screens meet and includes a submission confirmation with a counter.">
+    <meta name=" author" content="Marinda Keller">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="pr1">
+            <fieldset>
+                <legend>Product Name*</legend>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Please Select &#9662;</option>
+                </select>
+                <!--get this info to and from the array-->
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Overall Rating*</legend>
+                <label>
+                    <input type=radio id="rating" name=stars value="5-stars" required><span
+                        class=star>&star;&star;&star;&star;&star;</span>
+                </label>
+                <label>
+                    <input type=radio id="rating" name=stars value="4-stars" required><span
+                        class=star>&star;&star;&star;&star;</span>
+                </label><label>
+                    <input type=radio id="rating" name=stars value="3-stars" required><span
+                        class=star>&star;&star;&star;</span>
+                </label><label>
+                    <input type=radio id="rating" name=stars value="2-stars" required><span
+                        class=star>&star;&star;</span>
+                </label><label>
+                    <input type=radio id="rating" name=stars value="1-stars" required><span
+                        class=star>&star;</span></label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation*</legend>
+                <label><input type=date id=install name="install" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Which Features did you find useful in the product?
+                    <li>(Check all that apply)</li>
+                </legend>
+                <label><input type=checkbox name=code value=yes>Durability</label>
+                <label><input type=checkbox name=client value=yes>Ease of Use</label>
+                <label><input type=checkbox name=editing value=yes>Performance</label>
+                <label><input type=checkbox name=process value=yes>Design</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Written Review
+                    <li>(Optional)</li><input type="text" id=review name="review" Optional>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Your Name <li>(Optional)</li><input type="text" id=name name="name" Optional></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> &#x1F43E; Marinda Keller &#x1F43E; USA</p>
+        <p>Last modified <span id="last-modified"></span>
+        </p>
+    </footer>
+</body>
+
+
+
+</html>
