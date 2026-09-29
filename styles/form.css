@@ -13,6 +13,10 @@ label {
     text-align: left;
 }
 
+.product {
+    height: 44px;
+}
+
 input {
     height: 44px;
     vertical-align: middle;

@@ -27,7 +27,7 @@
         <form method="get" action="review.html" class="pr1">
             <fieldset>
                 <legend>Product Name*</legend>
-                <label for="product"><select id="product" name="product" required>
+                <label for="product"><select class="product" id="product" name="product" required>
                         <option value="" disabled selected>Select a Product &#9662;</option>
                     </select></label>
                 <!--get this info to and from the array-->
@@ -68,14 +68,18 @@
             </fieldset>
 
             <fieldset>
-                <legend>Written Review<br>
-                    <span class="features">(Optional)</span><input type="text" id=review name="review">
-                </legend>
+                <legend>Written Review<br></legend>
+                <label for="review"><span class="features">(Optional)</span><input type="text" id="review"
+                        name="review">
+                </label>
+
             </fieldset>
 
             <fieldset>
-                <legend>Your Name<br><span class="features">(Optional)</span><input type="text" id=name name="name">
-                </legend>
+                <legend>Your Name<br></legend>
+                <label for="name"><span class="features">(Optional)</span><input type="text" id="name"
+                        name="name"></label>
+
             </fieldset>
 
             <input type="submit" value="Post Review">
