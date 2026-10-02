@@ -4,10 +4,11 @@ body {
 }
 
 :root {
-    --text: #000000;
-    --background: #ffffff;
-    --header: #143E7A;
-    --header-text: #E7F3FD;
+    --black: #000000;
+    --white: #ffffff;
+    --blue: #143E7A;
+    --grey: #E7F3FD;
+    --five: pink;
 }
 
 header {
@@ -17,33 +18,26 @@ header {
     width: 100%
 }
 
+.logo {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
 h1 {
-    color: var(--header-text);
-    background-color: var(--header);
+    color: var(--grey);
+    background-color: var(--blue);
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-right: 40px;
     width: 100%
-}
-
-.white {
-    color: var(--background);
-    background-color: var(--text);
-}
-
-.blue {
-    color: var(--header);
-}
-
-.grey {
-    color: var(--header-text);
-    background-color: var(--header);
 }
 
 #menuButton {
     font-size: 2rem;
-    color: var(--header-text);
-    background-color: var(--header);
+    color: var(--grey);
+    background-color: var(--blue);
     border: none;
     position: absolute;
     top: 2rem;
@@ -57,16 +51,21 @@ h1 {
 #navMenu.show {
     display: block;
     width: 100%;
-    background-color: var(--header);
+    background-color: var(--blue);
 }
 
 nav a {
-    color: var(--header-text);
+    color: var(--grey);
     text-decoration: none;
 }
 
+nav a:hover {
+    color: var(--white);
+}
+
+
 nav a:visited {
-    color: var(--background);
+    color: var(--five);
 }
 
 nav.show {
@@ -96,10 +95,11 @@ li {
 }
 
 footer {
-    color: var(--header-text);
-    background-color: var(--header);
+    color: var(--five);
+    background-color: var(--blue);
     width: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 
 /*pugs-contact*/
@@ -110,34 +110,44 @@ fieldset {
     max-width: 500px;
 }
 
+input {
+    padding: 50px;
+}
+
 .submit {
     margin-top: 1rem;
-    color: var(--header-text);
-    background-color: var(--header);
+    color: var(--grey);
+    background-color: var(--blue);
     font-size: 1.2rem;
+    padding: 50px;
 }
 
 .suca {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /* pugs-faq */
 
+h2 {
+    color: var(--blue);
+}
+
 p {
     width: 100%;
-    max-width: 400px;
     margin-top: 3rem;
 }
 
-img {
+
+figcaption {
     width: 100%;
     max-width: 400px;
 }
 
-.figcaption {
+.faq {
     width: 100%;
     max-width: 400px;
 }
