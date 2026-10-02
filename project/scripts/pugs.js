@@ -60,7 +60,7 @@ function changePhoto() {
     photo1.src = photos[currentPhoto].src;
     caption1.textContent = `${photos[currentPhoto].caption}`;
 
-    photo2.src = photos[currentPhoto].src;
+    photo2.src = photos[secondPhoto].src;
     caption2.textContent = `${photos[secondPhoto].caption}`;
 }
 
