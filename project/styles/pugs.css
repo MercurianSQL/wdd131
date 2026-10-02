@@ -151,3 +151,11 @@ figcaption {
     width: 100%;
     max-width: 400px;
 }
+
+@media screen and (min-width: 500px) {
+    #photo-container {
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+    }
+}

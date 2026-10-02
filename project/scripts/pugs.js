@@ -11,8 +11,6 @@ menuButton.addEventListener("click", () => {
     }
 });
 
-
-
 const photos = [
     {
         src: "images/pexels-babydov-black.webp",
@@ -32,10 +30,19 @@ const photos = [
     }
 ];
 
+photos.forEach((photo) => {
+    console.log(photo.caption);
+});
+
 let currentPhoto = 0;
 
-const photo = document.querySelector("#photo");
-const caption = document.querySelector("#caption");
+
+
+const photo1 = document.querySelector("#photo1");
+const photo2 = document.querySelector("#photo2");
+
+const caption1 = document.querySelector("#caption1");
+const caption2 = document.querySelector("#caption2");
 
 function changePhoto() {
     currentPhoto++;
@@ -44,18 +51,18 @@ function changePhoto() {
         currentPhoto = 0;
     }
 
-    photo.src = photos[currentPhoto].src;
-    caption.textContent = photos[currentPhoto].caption;
+    let secondPhoto = currentPhoto + 1;
+
+    if (secondPhoto >= photos.length) {
+        secondPhoto = 0;
+    }
+
+    photo1.src = photos[currentPhoto].src;
+    caption1.textContent = `${photos[currentPhoto].caption}`;
+
+    photo2.src = photos[currentPhoto].src;
+    caption2.textContent = `${photos[secondPhoto].caption}`;
 }
 
 setInterval(changePhoto, 3000);
 
-// Mailing list signup counter
-let signupCount = Number(localStorage.getItem("signupCount")) || 0;
-signupCount++;
-localStorage.setItem("signupCount", signupCount);
-
-const count = document.querySelector("#signupCount");
-if (count) {
-    count.textContent = `${signupCount}`;
-}
