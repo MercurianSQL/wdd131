@@ -153,9 +153,9 @@ figcaption {
 }
 
 @media screen and (min-width: 500px) {
-    #photo-container {
-display:grid;
-grid-template-columns: 1fr 1fr;
-gap: 1rem;
+    .slideshow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 }
