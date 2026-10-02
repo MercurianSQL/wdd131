@@ -41,6 +41,7 @@ h1 {
     background-color: var(--blue);
     border: none;
     margin-top: 1rem;
+    right: 1rem;
 }
 
 #navMenu {
