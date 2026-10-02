@@ -5,4 +5,3 @@ localStorage.setItem("signupCount", signupCount);
 
 const count = document.querySelector("#signupCount");
 count.textContent = `${signupCount}`;
-;
