@@ -1,0 +1,118 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+:root {
+    --text: #000000;
+    --background: #ffffff;
+    --header: #143E7A;
+    --header-text: #E7F3FD;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%
+}
+
+h1 {
+    color: var(--header-text);
+    background-color: var(--header);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 40px;
+    width: 100%
+}
+
+.white {
+    color: var(--background);
+    background-color: var(--text);
+}
+
+.blue {
+    color: var(--header);
+}
+
+.grey {
+    color: var(--header-text);
+    background-color: var(--header);
+}
+
+#menuButton {
+    font-size: 2rem;
+    color: var(--header-text);
+    background-color: var(--header);
+    border: none;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+#navMenu {
+    display: none;
+}
+
+#navMenu.show {
+    display: block;
+    width: 100%;
+    background-color: var(--header);
+}
+
+nav a {
+    color: var(--header-text);
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: var(--background);
+}
+
+nav.show {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--header);
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.slideshow {
+    padding: 1 rem;
+    border: 1px solid var(--text);
+    width: 100%;
+    max-width: 500px;
+}
+
+.slideshow img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    color: var(--header-text);
+    background-color: var(--header);
+    width: 100%;
+    text-align: center;
+}
+
+/*pugs-contact*/
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.submit {
+    margin-top: 1rem;
+    color: var(--header-text);
+    background-color: var(--header);
+    font-size: 1.2rem;
+}
