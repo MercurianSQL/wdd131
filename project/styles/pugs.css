@@ -13,6 +13,7 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     position: relative;
     width: 100%
@@ -39,9 +40,7 @@ h1 {
     color: var(--grey);
     background-color: var(--blue);
     border: none;
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
+    margin-top: 1rem;
 }
 
 #navMenu {
@@ -82,7 +81,7 @@ nav.show {
     padding: 1 rem;
     border: 1px solid var(--text);
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
 }
 
 .slideshow img {
@@ -153,6 +152,15 @@ figcaption {
 }
 
 @media screen and (min-width: 500px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        width: 100%
+    }
+
     .slideshow {
         display: grid;
         grid-template-columns: 1fr 1fr;
