@@ -116,3 +116,28 @@ fieldset {
     background-color: var(--header);
     font-size: 1.2rem;
 }
+
+.suca {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* pugs-faq */
+
+p {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 3rem;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.figcaption {
+    width: 100%;
+    max-width: 400px;
+}
