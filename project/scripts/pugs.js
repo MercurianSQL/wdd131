@@ -30,9 +30,13 @@ const photos = [
     }
 ];
 
-photos.forEach((photo) => {
-    console.log(photo.caption);
-});
+function displayPhotoCaptions() {
+    photos.forEach((photo) => {
+        console.log(photo.caption);
+    });
+}
+
+displayPhotoCaptions();
 
 let currentPhoto = 0;
 
