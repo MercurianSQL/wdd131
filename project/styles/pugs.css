@@ -107,6 +107,7 @@ fieldset {
     flex-direction: column;
     width: 100%;
     max-width: 500px;
+    margin: 0 auto;
 }
 
 input {
@@ -134,21 +135,39 @@ input {
 h2 {
     color: var(--blue);
 }
-
-p {
-    width: 100%;
-    margin-top: 3rem;
+.book-card {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    align-items: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-
-figcaption {
-    width: 100%;
-    max-width: 400px;
+.book-info {
+    grid-column: 1;
 }
 
-.faq {
+.book-card figure {
+    grid-column: 2;
+    margin: 0;
+    text-align: center;
+}
+
+.book-card .faq {
+    display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.book-card figcaption {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
 }
 
 @media screen and (min-width: 500px) {
